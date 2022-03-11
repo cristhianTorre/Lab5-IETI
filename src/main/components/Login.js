@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { Grid } from '@mui/material';
@@ -13,12 +12,12 @@ export default function Login(props) {
     return (
         <Grid container style={{ height: "100vh" }}>
             <Grid xs={12} md={12} lg={12} item style={{ marginTop: '200px' }} >
-                <h1>Iniciar Sesión</h1>
-                <label style={{ display: "block", margin: "10px" }}>Correo electrónico</label>
-                <TextField id="outlined-basic" label="example@example.com" style={{ textAlign: "center" }} />
-                <label style={{ display: "block", margin: "10px" }}>Constraseña</label>
-                <TextField id="outlined-basic" placeholder='**************' style={{ textAlign: "center" }} />
-                <Button variant="contained" onClick={() => navigate("/home")} style={{ display: "block", marginLeft: 'auto', marginRight: 'auto', marginTop: '20px' }}>Ingresar</Button>
+                <h1>LOG-IN</h1>
+                <label style={{ display: "block", margin: "10px" }}>E-MAIL</label>
+                <TextField id="filled-basic" label="example@example.com" style={{ textAlign: "center" }} />
+                <label style={{ display: "block", margin: "10px" }}>PASSWORD</label>
+                <TextField id="filled-basic" placeholder='**************' style={{ textAlign: "center" }} />
+                <Button variant="text" onClick={() => navigate("/home")} style={{ display: "block", marginLeft: 'auto', marginRight: 'auto', marginTop: '20px' }}>Ingresar</Button>
             </Grid>
         </Grid>
     )
