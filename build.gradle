@@ -1,0 +1,13 @@
+plugins {
+    id 'org.jetbrains.kotlin.js' version '1.6.10'
+}
+
+group = 'me.usuario'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
